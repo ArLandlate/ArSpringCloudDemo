@@ -27,6 +27,8 @@ public class TestController {
 
 	/**
 	 * test
+	 * test address:
+	 * http://127.0.0.1:8443/ribbon/test/doTest?message=anyway
 	 */
 	@GetMapping(value="/doTest")
 	public ResultContainer doTest(String message){
@@ -43,12 +45,32 @@ public class TestController {
 
 	/**
 	 * test
+	 * test address:
+	 * http://127.0.0.1:8443/ribbon/test/doGetPower?message=anyway
 	 */
 	@GetMapping(value="/doGetPower")
 	public ResultContainer doGetPower(String message){
 		ResultContainer resultbody = ResultContainer.getSuccessInstance();
 		try {
 			String url = "http://" + BaseConstant.getSERVICE_POWER_NAME() + "/power/test/doGetPower?message=" + (null!=message?message:"");
+			return restTemplate.getForObject(url, ResultContainer.class);
+		}catch (JSONException e) {
+			return resultbody.transform(ResponseJsonTemplate.ERROR301).rwDescription(e.getMessage()).compile();
+		}catch (Exception e) {
+			return resultbody.transform(ResponseJsonTemplate.ERROR500).rwDescription(e.getMessage()).compile();
+		}
+	}
+
+	/**
+	 * test
+	 * test address:
+	 * http://127.0.0.1:8443/ribbon/test/doGetOrder?message=anyway
+	 */
+	@GetMapping(value="/doGetOrder")
+	public ResultContainer doGetOrder(String message){
+		ResultContainer resultbody = ResultContainer.getSuccessInstance();
+		try {
+			String url = "http://" + BaseConstant.getSERVICE_ORDER_NAME() + "/order/test/doGetOrder?message=" + (null!=message?message:"");
 			return restTemplate.getForObject(url, ResultContainer.class);
 		}catch (JSONException e) {
 			return resultbody.transform(ResponseJsonTemplate.ERROR301).rwDescription(e.getMessage()).compile();

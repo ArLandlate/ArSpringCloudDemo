@@ -8,6 +8,8 @@
         <module>ribbon</module>
         <module>power</module>
         <module>power02</module>
+        <module>order</module>
+        <module>order02</module>
     </modules>
 
     <parent>

@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="order02" />
         <module name="power" />
         <module name="ribbon" />
+        <module name="order" />
         <module name="power02" />
       </profile>
     </annotationProcessing>
@@ -15,6 +17,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ArSpringCloudDemo" options="-parameters" />
+      <module name="order" options="-parameters" />
+      <module name="order02" options="-parameters" />
       <module name="power" options="-parameters" />
       <module name="power02" options="-parameters" />
       <module name="ribbon" options="-parameters" />

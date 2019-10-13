@@ -27,6 +27,8 @@ public class BaseConstant {
 	// 其他项目名称
 	private static String SERVICE_POWER_NAME;
 	private static String SERVICE_RIBBON_NAME;
+	private static String SERVICE_ORDER_NAME;
+	private static String SERVICE_FEIGN_NAME;
 
 	/**
 	 * for response json template
@@ -94,6 +96,14 @@ public class BaseConstant {
 	@Value("${bcst.service.ribbon.name}")
 	public void setSERVICE_RIBBON_NAME(String SERVICE_RIBBON_NAME) {
 		this.SERVICE_RIBBON_NAME = SERVICE_RIBBON_NAME;
+	}
+	@Value("${bcst.service.order.name}")
+	public void setSERVICE_ORDER_NAME(String SERVICE_ORDER_NAME) {
+		this.SERVICE_ORDER_NAME = SERVICE_ORDER_NAME;
+	}
+	@Value("${bcst.service.feign.name}")
+	public void setSERVICE_FEIGN_NAME(String SERVICE_FEIGN_NAME) {
+		this.SERVICE_FEIGN_NAME = SERVICE_FEIGN_NAME;
 	}
 	@Value("${bcst.service.code}")
 	public void setSERVICE_CODE(int service_code) {
@@ -186,6 +196,12 @@ public class BaseConstant {
 	}
 	public static String getSERVICE_RIBBON_NAME() {
 		return SERVICE_RIBBON_NAME;
+	}
+	public static String getSERVICE_ORDER_NAME() {
+		return SERVICE_ORDER_NAME;
+	}
+	public static String getSERVICE_FEIGN_NAME() {
+		return SERVICE_FEIGN_NAME;
 	}
 	public static int getSERVICE_CODE() {
 		return SERVICE_CODE;
