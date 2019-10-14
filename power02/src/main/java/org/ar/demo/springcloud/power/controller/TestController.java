@@ -1,9 +1,9 @@
 package org.ar.demo.springcloud.power.controller;
 
 import com.alibaba.fastjson.JSONException;
-import org.ar.demo.springcloud.power.configuration.BaseConstant;
-import org.ar.demo.springcloud.power.enums.ResponseJsonTemplate;
-import org.ar.demo.springcloud.power.enums.ResultContainer;
+import org.ar.demo.springcloud.core.configuration.BaseConstant;
+import org.ar.demo.springcloud.core.enums.ResponseJsonTemplate;
+import org.ar.demo.springcloud.core.enums.ResultContainer;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,6 +25,7 @@ public class TestController {
 
 	/**
 	 * test get power
+	 * http://127.0.0.1:8452/power/test/doGetPower?message=anyway
 	 */
 	@GetMapping(value="/doGetPower")
 	public ResultContainer doGetPower(String message){

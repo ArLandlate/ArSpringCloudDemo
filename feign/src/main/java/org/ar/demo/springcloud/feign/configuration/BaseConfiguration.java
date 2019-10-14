@@ -1,4 +1,4 @@
-package org.ar.demo.springcloud.order.configuration;
+package org.ar.demo.springcloud.feign.configuration;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -10,8 +10,9 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 @ComponentScans({
         @ComponentScan("org.ar.demo.springcloud.core.configuration"),
-        @ComponentScan("org.ar.demo.springcloud.order.controller"),
-        @ComponentScan("org.ar.demo.springcloud.order.service")
+        @ComponentScan("org.ar.demo.springcloud.feign.controller"),
+        @ComponentScan("org.ar.demo.springcloud.feign.client"),
+        @ComponentScan("org.ar.demo.springcloud.feign.service")
 })
 public class BaseConfiguration {
 

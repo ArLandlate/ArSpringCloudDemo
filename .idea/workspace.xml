@@ -2,54 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52b33e3e-cedd-49f9-a5cb-f5e62e7b6da3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/OrderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/configuration/BaseConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/configuration/BaseConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/enums/ResponseJsonTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/enums/ResultContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/resources/conf/basicConstant.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order02/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/OrderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/configuration/BaseConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/configuration/BaseConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/enums/ResponseJsonTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/enums/ResultContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order02/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order02/src/main/resources/conf/basicConstant.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/policy/IRuleConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/org/ar/demo/springcloud/core/configuration/InitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign/src/main/java/org/ar/demo/springcloud/feign/FeignApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign/src/main/java/org/ar/demo/springcloud/feign/client/OrderTestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign/src/main/java/org/ar/demo/springcloud/feign/configuration/BaseConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign/src/main/java/org/ar/demo/springcloud/feign/configuration/ServiceInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign/src/main/java/org/ar/demo/springcloud/feign/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign/src/main/resources/conf/serviceInfo.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/configuration/ServiceInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon/src/main/resources/conf/serviceInfo.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/configuration/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/configuration/BaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/configuration/BaseConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ar/demo/springcloud/core/configuration/BaseConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/enums/ResponseJsonTemplate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/enums/ResultContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/resources/conf/basicConstant.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/conf/basicConstant.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order02/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/configuration/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/configuration/BaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/configuration/BaseConstant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/enums/ResponseJsonTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ar/demo/springcloud/core/enums/ResponseJsonTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/enums/ResultContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ar/demo/springcloud/core/enums/ResultContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order02/src/main/resources/conf/basicConstant.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power/src/main/java/org/ar/demo/springcloud/power/configuration/BaseConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/power/src/main/java/org/ar/demo/springcloud/power/configuration/BaseConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/power/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power/src/main/resources/conf/basicConstant.properties" beforeDir="false" afterPath="$PROJECT_DIR$/power/src/main/resources/conf/basicConstant.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/power/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power/target/classes/conf/basicConstant.properties" beforeDir="false" afterPath="$PROJECT_DIR$/power/target/classes/conf/basicConstant.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power/target/classes/org/ar/demo/springcloud/power/configuration/BaseConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/power/target/classes/org/ar/demo/springcloud/power/configuration/BaseConstant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power02/src/main/java/org/ar/demo/springcloud/power/configuration/BaseConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/power02/src/main/java/org/ar/demo/springcloud/power/configuration/BaseConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power02/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/power02/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power02/src/main/resources/conf/basicConstant.properties" beforeDir="false" afterPath="$PROJECT_DIR$/power02/src/main/resources/conf/basicConstant.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power02/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/power02/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power02/target/classes/conf/basicConstant.properties" beforeDir="false" afterPath="$PROJECT_DIR$/power02/target/classes/conf/basicConstant.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power02/target/classes/org/ar/demo/springcloud/power/configuration/BaseConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/power02/target/classes/org/ar/demo/springcloud/power/configuration/BaseConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power/src/main/java/org/ar/demo/springcloud/power/configuration/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/power/src/main/java/org/ar/demo/springcloud/power/configuration/BaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power/src/main/java/org/ar/demo/springcloud/power/configuration/BaseConstant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/power/src/main/java/org/ar/demo/springcloud/power/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/power/src/main/java/org/ar/demo/springcloud/power/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power/src/main/java/org/ar/demo/springcloud/power/enums/ResponseJsonTemplate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/power/src/main/java/org/ar/demo/springcloud/power/enums/ResultContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/power/src/main/resources/conf/basicConstant.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/power02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power02/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power02/src/main/java/org/ar/demo/springcloud/power/configuration/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/power02/src/main/java/org/ar/demo/springcloud/power/configuration/BaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power02/src/main/java/org/ar/demo/springcloud/power/configuration/BaseConstant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/power02/src/main/java/org/ar/demo/springcloud/power/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/power02/src/main/java/org/ar/demo/springcloud/power/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power02/src/main/java/org/ar/demo/springcloud/power/enums/ResponseJsonTemplate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/power02/src/main/java/org/ar/demo/springcloud/power/enums/ResultContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/power02/src/main/resources/conf/basicConstant.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/RibbonApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/RibbonApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/configuration/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/configuration/BaseConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/configuration/BaseConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/configuration/BaseConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/configuration/BaseConstant.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon/src/main/resources/conf/basicConstant.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/src/main/resources/conf/basicConstant.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon/target/classes/conf/basicConstant.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/target/classes/conf/basicConstant.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon/target/classes/org/ar/demo/springcloud/ribbon/RibbonApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/target/classes/org/ar/demo/springcloud/ribbon/RibbonApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon/target/classes/org/ar/demo/springcloud/ribbon/configuration/BaseConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/target/classes/org/ar/demo/springcloud/ribbon/configuration/BaseConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon/target/classes/org/ar/demo/springcloud/ribbon/configuration/BaseConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/target/classes/org/ar/demo/springcloud/ribbon/configuration/BaseConstant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon/target/classes/org/ar/demo/springcloud/ribbon/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/target/classes/org/ar/demo/springcloud/ribbon/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/enums/ResponseJsonTemplate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/enums/ResultContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon/src/main/resources/conf/basicConstant.properties" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +96,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/order02/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/feign/src/main/resources/conf" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -99,18 +105,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\order02\src\main\resources" />
-      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\order02\src\main\java\org\ar\demo\springcloud\order" />
-      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\order\src\main\resources\conf" />
-      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\power\src\main\resources\conf" />
-      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\power02\src\main\resources\conf" />
+      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\feign\src\main\resources\conf" />
+      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\ribbon\src\main\resources\conf" />
+      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\core\src\main\resources" />
+      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\core\src\main\java\org\ar\demo\springcloud\core" />
+      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\feign\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.ar.demo.springcloud.feign.configuration" />
+      <recent name="org.ar.demo.springcloud.feign" />
       <recent name="org.ar.demo.springcloud.ribbon.policy" />
       <recent name="org.ar.demo.springcloud.order" />
       <recent name="org.ar.demo.springcloud.order.configuration" />
-      <recent name="org.ar.demo.springcloud.power.configuration" />
-      <recent name="org.ar.demo.springcloud.power" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\ribbon\src\main\resources\conf" />
@@ -133,7 +139,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderApplication (1)">
+  <component name="RunManager" selected="Spring Boot.FeignApplication">
+    <configuration name="FeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="feign" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.ar.demo.springcloud.feign.FeignApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="order02" />
       <extension name="coverage">
@@ -190,7 +203,7 @@
       <module name="ribbon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.ar.demo.springcloud.ribbon.*" />
+          <option name="PATTERN" value="org.ar.demo.springcloud.ribbon.configuration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,10 +215,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.RibbonApplication" />
-        <item itemvalue="Spring Boot.OrderApplication (1)" />
-        <item itemvalue="Spring Boot.OrderApplication" />
         <item itemvalue="Spring Boot.PowerApplication (1)" />
         <item itemvalue="Spring Boot.PowerApplication" />
+        <item itemvalue="Spring Boot.OrderApplication (1)" />
+        <item itemvalue="Spring Boot.OrderApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +233,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570817169114</updated>
       <workItem from="1570817182298" duration="10972000" />
-      <workItem from="1570906827206" duration="19333000" />
+      <workItem from="1570906827206" duration="36764000" />
     </task>
     <servers />
   </component>

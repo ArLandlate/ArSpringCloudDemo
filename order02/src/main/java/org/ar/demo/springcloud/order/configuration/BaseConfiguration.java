@@ -9,6 +9,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Configuration
 @ComponentScans({
+        @ComponentScan("org.ar.demo.springcloud.core.configuration"),
         @ComponentScan("org.ar.demo.springcloud.order.controller"),
         @ComponentScan("org.ar.demo.springcloud.order.service")
 })

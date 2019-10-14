@@ -1,7 +1,5 @@
 package org.ar.demo.springcloud.ribbon.configuration;
 
-import com.netflix.loadbalancer.IRule;
-import com.netflix.loadbalancer.RetryRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -11,6 +9,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Configuration
 @ComponentScans({
+        @ComponentScan("org.ar.demo.springcloud.core.configuration"),
         @ComponentScan("org.ar.demo.springcloud.ribbon.controller"),
         @ComponentScan("org.ar.demo.springcloud.ribbon.service")
 })

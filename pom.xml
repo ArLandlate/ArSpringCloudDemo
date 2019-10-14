@@ -10,6 +10,8 @@
         <module>power02</module>
         <module>order</module>
         <module>order02</module>
+        <module>feign</module>
+        <module>core</module>
     </modules>
 
     <parent>
@@ -32,12 +34,26 @@
 
     <dependencyManagement>
         <dependencies>
+            <!--my own module-->
+            <dependency>
+                <groupId>org.ar.demo.springcloud</groupId>
+                <artifactId>core</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!--spring cloud-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>Greenwich.SR1</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
+                <version>2.1.1.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

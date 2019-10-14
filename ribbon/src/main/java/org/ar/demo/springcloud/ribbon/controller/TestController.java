@@ -1,9 +1,10 @@
 package org.ar.demo.springcloud.ribbon.controller;
 
 import com.alibaba.fastjson.JSONException;
-import org.ar.demo.springcloud.ribbon.configuration.BaseConstant;
-import org.ar.demo.springcloud.ribbon.enums.ResponseJsonTemplate;
-import org.ar.demo.springcloud.ribbon.enums.ResultContainer;
+import org.ar.demo.springcloud.core.configuration.BaseConstant;
+import org.ar.demo.springcloud.core.enums.ResponseJsonTemplate;
+import org.ar.demo.springcloud.core.enums.ResultContainer;
+import org.ar.demo.springcloud.ribbon.configuration.ServiceInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,6 +25,8 @@ public class TestController {
 	 */
 	@Autowired
 	private RestTemplate restTemplate;
+	@Autowired
+	private ServiceInfo serviceInfo;
 
 	/**
 	 * test
@@ -52,7 +55,7 @@ public class TestController {
 	public ResultContainer doGetPower(String message){
 		ResultContainer resultbody = ResultContainer.getSuccessInstance();
 		try {
-			String url = "http://" + BaseConstant.getSERVICE_POWER_NAME() + "/power/test/doGetPower?message=" + (null!=message?message:"");
+			String url = "http://" + serviceInfo.POWER_NAME + "/power/test/doGetPower?message=" + (null!=message?message:"");
 			return restTemplate.getForObject(url, ResultContainer.class);
 		}catch (JSONException e) {
 			return resultbody.transform(ResponseJsonTemplate.ERROR301).rwDescription(e.getMessage()).compile();
@@ -70,7 +73,7 @@ public class TestController {
 	public ResultContainer doGetOrder(String message){
 		ResultContainer resultbody = ResultContainer.getSuccessInstance();
 		try {
-			String url = "http://" + BaseConstant.getSERVICE_ORDER_NAME() + "/order/test/doGetOrder?message=" + (null!=message?message:"");
+			String url = "http://" + serviceInfo.ORDER_NAME + "/order/test/doGetOrder?message=" + (null!=message?message:"");
 			return restTemplate.getForObject(url, ResultContainer.class);
 		}catch (JSONException e) {
 			return resultbody.transform(ResponseJsonTemplate.ERROR301).rwDescription(e.getMessage()).compile();

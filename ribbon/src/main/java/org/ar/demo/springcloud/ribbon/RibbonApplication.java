@@ -9,13 +9,11 @@ import org.springframework.cloud.netflix.ribbon.RibbonClients;
 import org.springframework.context.annotation.PropertySource;
 
 @EnableEurekaClient
-@SpringBootApplication(scanBasePackages = {
-		"org.ar.demo.springcloud.ribbon.configuration"
-})
-@PropertySource(value= {"${config.path}/basicConstant.properties"}, ignoreResourceNotFound=true, encoding="utf-8")
+@SpringBootApplication(scanBasePackages = {"org.ar.demo.springcloud.ribbon.configuration"})
+@PropertySource(value= {"${config.path}/serviceInfo.properties"}, ignoreResourceNotFound=true, encoding="utf-8")
 @RibbonClients({
-		@RibbonClient(name = "${bcst.service.power.name}", configuration = IRuleConfig.RetryRuleConfig.class),
-		@RibbonClient(name = "${bcst.service.order.name}", configuration = IRuleConfig.RandomRuleConfig.class)
+		@RibbonClient(name = "${service.power.info.name}", configuration = IRuleConfig.RetryRuleConfig.class),
+		@RibbonClient(name = "${service.order.info.name}", configuration = IRuleConfig.RandomRuleConfig.class)
 })
 public class RibbonApplication {
 

@@ -9,15 +9,33 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>order</artifactId>
+    <artifactId>feign</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
+        <!--my own module-->
         <dependency>
             <groupId>org.ar.demo.springcloud</groupId>
             <artifactId>core</artifactId>
         </dependency>
+        <!--spring cloud-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>org.ar.demo.springcloud.feign.FeignApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
