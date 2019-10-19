@@ -11,7 +11,7 @@ public class BaseConstant {
 	
 	/**
 	 * @author ArLandlate
-	 * useful: my project base constants
+	 * function: my project base constants
 	 */
 	
 	/**

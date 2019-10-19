@@ -10,7 +10,7 @@ public class IRuleConfig {
 
     /**
      * @author ArLandlate
-     * useful: IRule config
+     * function: IRule config
      * 不同服务定义不同的负载均衡策略
      * notice: 这一配置文件必须放在spring组件扫描范围之外，否则spring会让所有服务都遵循这一策略
      */

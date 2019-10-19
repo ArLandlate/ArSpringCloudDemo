@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="rabbitmq-listener" />
+        <module name="rabbitmq-sender" />
         <module name="power02" />
         <module name="order" />
         <module name="feign" />
@@ -25,6 +27,8 @@
       <module name="order02" options="-parameters" />
       <module name="power" options="-parameters" />
       <module name="power02" options="-parameters" />
+      <module name="rabbitmq-listener" options="-parameters" />
+      <module name="rabbitmq-sender" options="-parameters" />
       <module name="ribbon" options="-parameters" />
     </option>
   </component>

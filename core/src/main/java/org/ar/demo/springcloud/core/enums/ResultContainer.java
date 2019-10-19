@@ -7,7 +7,7 @@ public class ResultContainer {
 	
 	/**
 	 * @author ArLandlate
-	 * useful: ResponseJsonTemplate的容器
+	 * function: ResponseJsonTemplate的容器
 	 */
 	
 	/**

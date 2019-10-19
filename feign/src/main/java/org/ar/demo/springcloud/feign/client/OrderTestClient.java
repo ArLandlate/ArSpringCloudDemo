@@ -12,7 +12,7 @@ public interface OrderTestClient {
 
     /**
      * @author ArLandlate
-     * useful: order service test controller invacation interface
+     * function: order service test controller invacation interface
      */
 
     @GetMapping("/order/test/doGetOrder?message={message}")

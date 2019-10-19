@@ -18,7 +18,7 @@ public class BaseConfiguration {
 
     /**
      * @author ArLandlate
-     * useful: spring boot base config
+     * function: spring boot base config
      */
 
     @Bean           //ribbon服务发现

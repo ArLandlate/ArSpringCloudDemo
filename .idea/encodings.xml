@@ -8,6 +8,8 @@
     <file url="file://$PROJECT_DIR$/order02" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/power" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/power02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-listener" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-sender" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ribbon" charset="UTF-8" />
   </component>
 </project>

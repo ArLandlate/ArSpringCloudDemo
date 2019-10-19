@@ -6,7 +6,7 @@ public enum ResponseJsonTemplate {
 	
 	/**
 	 * @author ArLandlate
-	 * useful: 向前端项目返回json数据的模板
+	 * function: 向前端项目返回json数据的模板
 	 */
 	
 	//instances

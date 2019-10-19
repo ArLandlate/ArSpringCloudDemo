@@ -10,7 +10,7 @@ public class PowerApplication {
 
 	/**
 	 * @author ArLandlate
-	 * useful: spring boot 启动
+	 * function: spring boot 启动
 	 */
 
 	public static void main(String[] args) {

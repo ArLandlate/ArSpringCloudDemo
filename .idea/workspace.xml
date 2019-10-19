@@ -2,13 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52b33e3e-cedd-49f9-a5cb-f5e62e7b6da3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/rabbitmq-listener/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-listener/src/main/java/org/ar/demo/springcloud/rabbitmq/listener/ListenerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-listener/src/main/java/org/ar/demo/springcloud/rabbitmq/listener/configuration/BaseConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-listener/src/main/java/org/ar/demo/springcloud/rabbitmq/listener/configuration/MQConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-listener/src/main/java/org/ar/demo/springcloud/rabbitmq/listener/controller/ListenerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-listener/src/main/java/org/ar/demo/springcloud/rabbitmq/listener/util/ListenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-listener/src/main/java/org/ar/demo/springcloud/rabbitmq/listener/util/MessageCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-listener/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-sender/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-sender/src/main/java/org/ar/demo/springcloud/rabbitmq/sender/SenderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-sender/src/main/java/org/ar/demo/springcloud/rabbitmq/sender/configuration/BaseConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-sender/src/main/java/org/ar/demo/springcloud/rabbitmq/sender/configuration/MQConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-sender/src/main/java/org/ar/demo/springcloud/rabbitmq/sender/controller/SenderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-sender/src/main/java/org/ar/demo/springcloud/rabbitmq/sender/util/SendUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-sender/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/ar/demo/springcloud/core/configuration/BaseConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ar/demo/springcloud/core/configuration/BaseConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/ar/demo/springcloud/core/configuration/InitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ar/demo/springcloud/core/configuration/InitConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/ar/demo/springcloud/core/enums/ResponseJsonTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ar/demo/springcloud/core/enums/ResponseJsonTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/ar/demo/springcloud/core/enums/ResultContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/org/ar/demo/springcloud/core/enums/ResultContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign/src/main/java/org/ar/demo/springcloud/feign/FeignApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign/src/main/java/org/ar/demo/springcloud/feign/FeignApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign/src/main/java/org/ar/demo/springcloud/feign/client/OrderTestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign/src/main/java/org/ar/demo/springcloud/feign/client/OrderTestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign/src/main/java/org/ar/demo/springcloud/feign/configuration/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign/src/main/java/org/ar/demo/springcloud/feign/configuration/BaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign/src/main/java/org/ar/demo/springcloud/feign/configuration/ServiceInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign/src/main/java/org/ar/demo/springcloud/feign/configuration/ServiceInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign/src/main/java/org/ar/demo/springcloud/feign/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign/src/main/java/org/ar/demo/springcloud/feign/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/OrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/OrderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/configuration/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/configuration/BaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/org/ar/demo/springcloud/order/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/OrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/OrderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/configuration/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/configuration/BaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order02/src/main/java/org/ar/demo/springcloud/order/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power/src/main/java/org/ar/demo/springcloud/power/PowerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/power/src/main/java/org/ar/demo/springcloud/power/PowerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power/src/main/java/org/ar/demo/springcloud/power/configuration/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/power/src/main/java/org/ar/demo/springcloud/power/configuration/BaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power/src/main/java/org/ar/demo/springcloud/power/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/power/src/main/java/org/ar/demo/springcloud/power/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power02/src/main/java/org/ar/demo/springcloud/power/PowerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/power02/src/main/java/org/ar/demo/springcloud/power/PowerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power02/src/main/java/org/ar/demo/springcloud/power/configuration/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/power02/src/main/java/org/ar/demo/springcloud/power/configuration/BaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power02/src/main/java/org/ar/demo/springcloud/power/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/power02/src/main/java/org/ar/demo/springcloud/power/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/RibbonApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/RibbonApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/configuration/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/configuration/BaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/configuration/ServiceInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/configuration/ServiceInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/policy/IRuleConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon/src/main/java/org/ar/demo/springcloud/ribbon/policy/IRuleConfig.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,7 +101,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/feign/src/main/resources/conf" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rabbitmq-listener/src/main/java/org/ar/demo/springcloud/rabbitmq/listener" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -51,22 +109,22 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\feign\src\main\resources\conf" />
-      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\ribbon\src\main\resources\conf" />
-      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\core\src\main\resources" />
-      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\core\src\main\java\org\ar\demo\springcloud\core" />
-      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\feign\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.ar.demo.springcloud.feign.configuration" />
-      <recent name="org.ar.demo.springcloud.feign" />
-      <recent name="org.ar.demo.springcloud.ribbon.policy" />
-      <recent name="org.ar.demo.springcloud.order" />
-      <recent name="org.ar.demo.springcloud.order.configuration" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\ribbon\src\main\resources\conf" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.ar.demo.springcloud.rabbitmq.listener" />
+      <recent name="org.ar.demo.springcloud.rabbitmq.sender" />
+      <recent name="" />
+      <recent name="org.ar.demo.springcloud.feign.configuration" />
+      <recent name="org.ar.demo.springcloud.feign" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\rabbitmq-listener\src\main\java\org\ar\demo\springcloud\rabbitmq\listener" />
+      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\rabbitmq-listener\src\main\resources" />
+      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\rabbitmq-sender\src\main\resources" />
+      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\rabbitmq-sender\src\main\java\org\ar\demo\springcloud\rabbitmq\sender" />
+      <recent name="D:\ArSpace\Development\GitSpace\ArSpringCloudDemo\rabbitmq-sender\src\main\java" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -86,7 +144,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.FeignApplication">
+  <component name="RunManager" selected="Spring Boot.ListenerApplication">
     <configuration name="FeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="feign" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.ar.demo.springcloud.feign.FeignApplication" />
@@ -94,28 +152,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="order02" />
+    <configuration name="ListenerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="rabbitmq-listener" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.ar.demo.springcloud.order.*" />
+          <option name="PATTERN" value="org.ar.demo.springcloud.rabbitmq.listener.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.ar.demo.springcloud.order.OrderApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="order" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.ar.demo.springcloud.order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.ar.demo.springcloud.order.OrderApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.ar.demo.springcloud.rabbitmq.listener.ListenerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,13 +204,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SenderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="rabbitmq-sender" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ar.demo.springcloud.rabbitmq.sender.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.ar.demo.springcloud.rabbitmq.sender.SenderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ListenerApplication" />
+        <item itemvalue="Spring Boot.SenderApplication" />
         <item itemvalue="Spring Boot.RibbonApplication" />
         <item itemvalue="Spring Boot.PowerApplication (1)" />
         <item itemvalue="Spring Boot.PowerApplication" />
-        <item itemvalue="Spring Boot.OrderApplication (1)" />
-        <item itemvalue="Spring Boot.OrderApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -183,6 +241,7 @@
       <workItem from="1570906827206" duration="36764000" />
       <workItem from="1571067522237" duration="596000" />
       <workItem from="1571138023140" duration="700000" />
+      <workItem from="1571450181102" duration="15411000" />
     </task>
     <servers />
   </component>

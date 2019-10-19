@@ -10,7 +10,7 @@ public class ServiceInfo {
 
     /**
      * @author ArLandlate
-     * useful: 配置层：服务信息常量
+     * function: 配置层：服务信息常量
      */
 
     public ServiceInfo(

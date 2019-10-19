@@ -16,7 +16,7 @@ public class TestController {
 	
 	/**
 	 * @author ArLandlate
-	 * useful: 控制层：测试控制器
+	 * function: 控制层：测试控制器
 	 */
 
 	/**

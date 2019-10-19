@@ -12,6 +12,8 @@
         <module>order02</module>
         <module>feign</module>
         <module>core</module>
+        <module>rabbitmq-sender</module>
+        <module>rabbitmq-listener</module>
     </modules>
 
     <parent>
