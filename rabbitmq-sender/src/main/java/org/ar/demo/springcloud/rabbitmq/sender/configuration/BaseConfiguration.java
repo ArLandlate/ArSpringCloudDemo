@@ -1,5 +1,7 @@
 package org.ar.demo.springcloud.rabbitmq.sender.configuration;
 
+import org.ar.demo.springcloud.rabbitmq.sender.util.SendCallBackToPrint;
+import org.ar.demo.springcloud.rabbitmq.sender.util.SendConfirmCallBackToPrint;
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
@@ -8,6 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScans;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.bind.annotation.PathVariable;
 
 @Configuration
 @ComponentScans({
@@ -31,14 +34,14 @@ public class BaseConfiguration {
      * rabbitmq connection factory bean
      * @return
      */
-    @Bean
+    @Bean()
     public ConnectionFactory connectionFactory(){
-        CachingConnectionFactory factory = new CachingConnectionFactory("192.168.177.128", 5672);
+        CachingConnectionFactory factory = new CachingConnectionFactory(MQConstant.RBMQ_HOSTNAME, MQConstant.RBMQ_PORT);
 //        factory.setHost("192.168.177.128");
 //        factory.setPort(5672);
-        factory.setUsername("sender");
-        factory.setPassword("nevermind");
-        factory.setVirtualHost("arrb00v");
+        factory.setUsername(MQConstant.RBMQ_USERNAME);
+        factory.setPassword(MQConstant.RBMQ_PASSWORD);
+        factory.setVirtualHost(MQConstant.RBMQ_VIRTUALHOST);
 
         // if using publisher confirms
 //        factory.setPublisherConfirms(true);
@@ -55,6 +58,31 @@ public class BaseConfiguration {
             if you adopt configuration files, spring will config this part for you automatically
         */
         RabbitTemplate template = new RabbitTemplate(factory);
+        return template;
+    }
+
+    /**
+     * rabbitmq template02
+     * @return
+     */
+    @Bean("rabbitTemplate02")
+    public RabbitTemplate rabbitTemplate02(){
+        CachingConnectionFactory factory = new CachingConnectionFactory(MQConstant.RBMQ_HOSTNAME, MQConstant.RBMQ_PORT);
+        factory.setUsername(MQConstant.RBMQ_USERNAME);
+        factory.setPassword(MQConstant.RBMQ_PASSWORD);
+        factory.setVirtualHost(MQConstant.RBMQ_VIRTUALHOST);
+
+        // using publisher confirms
+        factory.setPublisherConfirms(true);
+        RabbitTemplate template = new RabbitTemplate(factory);
+        // 指定发送方确认回调接口的实现类
+        template.setConfirmCallback(new SendConfirmCallBackToPrint());
+
+        // 开启mandatory模式（开启失败回调）
+        template.setMandatory(true);
+        // 指定失败回调接口的实现类
+        template.setReturnCallback(new SendCallBackToPrint());
+
         return template;
     }
 

@@ -30,7 +30,8 @@ public class ListenerController {
 
 	/**
 	 * test listener message
-	 * http://127.0.0.1:8411/rabbitmq/listener/test/feignHandleAllMessageInTheQueue
+	 * (simple send and listen test)
+	 * test address: http://127.0.0.1:8411/rabbitmq/listener/test/feignHandleAllMessageInTheQueue
 	 */
 	@GetMapping(value="/feignHandleAllMessageInTheQueue")
 	public ResultContainer feignHandleAllMessageInTheQueue(){
