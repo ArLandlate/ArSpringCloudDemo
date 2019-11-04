@@ -36,7 +36,7 @@ public class BaseConfiguration {
         CachingConnectionFactory factory = new CachingConnectionFactory("192.168.177.128", 5672);
 //        factory.setHost("192.168.177.128");
 //        factory.setPort(5672);
-        factory.setUsername("sender");
+        factory.setUsername("listener");
         factory.setPassword("nevermind");
         factory.setVirtualHost("arrb00v");
 

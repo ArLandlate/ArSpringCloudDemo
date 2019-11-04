@@ -7,12 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="rabbitmq-listener" />
-        <module name="rabbitmq-sender" />
         <module name="power02" />
         <module name="order" />
         <module name="feign" />
         <module name="order02" />
         <module name="ribbon" />
+        <module name="rabbitmq-sender" />
         <module name="power" />
         <module name="core" />
       </profile>
